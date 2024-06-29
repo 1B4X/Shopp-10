@@ -220,6 +220,21 @@ body {
     bottom: 5px;
 }
 
+.title1 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px 25px 0 0;
+    color: #1D2B53;
+    flex: 4;
+    min-width: 200px;
+    min-height: 30px;
+    flex-wrap: wrap;
+    background-color:  #ffffff;
+    border-color: #ffffff;
+}
+
 .pesan {
     position: relative;
     display: flex;
@@ -265,6 +280,21 @@ body {
     padding-right: 30px;
 }
 
+.title2 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px 25px 0 0;
+    color: #fff;
+    flex: 4;
+    min-width: 200px;
+    min-height: 30px;
+    flex-wrap: wrap;
+    background-color:  #1D2B53;
+    border-color: #1D2B53;
+}
+
 .contact {
     position: relative;
     display: flex;
@@ -275,7 +305,6 @@ body {
     padding-top: 5px;
     flex: 4;
     flex-wrap: wrap;
-    border-radius: 25px 25px 0px 0px;
     justify-content: space-evenly; 
 }
 
