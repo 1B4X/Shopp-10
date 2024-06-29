@@ -1,0 +1,354 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+.container {
+    background-color: white;
+}
+
+.row {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #12372A;
+    position: relative;
+    flex: 1;
+    margin: 3px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1D2B53;
+    position: relative;
+    flex: 1;
+    height: 85px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    border-radius: 0 0 0 0;
+}
+
+.nav-logo{
+    display: flex;
+    position: relative;
+    left: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-logo .logo img {
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    flex-wrap: wrap;
+}
+
+.nav-links{
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    counter-reset: "";
+    position: relative;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #e47755;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.btn{
+    display: flex;
+    position: relative;
+    padding: 1rem 1rem;
+    font-size: 1rem 2rem;
+    color: #fff;
+    background-color: #d8421d;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    right: 15px;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+}
+
+.btn:hover{
+    background-color: #e47755;
+}
+
+.home {
+    position: relative;
+    display: flex;
+    background-image: url("./assets/background/background4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    min-width: 300px;
+    flex-wrap: wrap;
+    flex: 5;
+    justify-content: space-around;
+    min-height: 250px; 
+    border-radius: 0px 0px 25px 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    display: flex;
+    position: relative;
+    color: #fff;
+}
+
+.profil {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    min-width: 320px;
+    min-height: 230px;
+    padding-top: 5px;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.profil h1 {
+    position: relative;
+    display: flex;
+    color: black;
+}
+
+.profil p {
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: black;
+    bottom: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+}
+
+.title {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px 25px 0 0;
+    color: #fff;
+    flex: 4;
+    min-width: 200px;
+    min-height: 30px;
+    flex-wrap: wrap;
+    background-color:  #1D2B53;
+    border-color: #1D2B53;
+}
+
+.produk {
+    display: flex;
+    padding-top: 20px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #1D2B53;
+    position: relative;
+    border-radius: 0px 0px 25px 25px ;
+    flex: 20;
+    min-width: 200px;
+    min-height: 250px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.produk div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 155px;
+    margin: 10px;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.produk div img {
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+}
+
+.produk div a {
+    position: relative;
+    color: #fff;
+    margin: 1px;
+    align-items: center;
+    bottom: 5px;
+}
+
+.pesan {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    padding-top: 5px;
+    flex: 4;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.pesan div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    width: 450px;
+    color: white;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.pesan div img {
+    position: relative;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    background-color: #ffffff;
+}
+
+.pesan div a {
+    display: flex;
+    position: relative;
+    color: black;
+    padding-right: 30px;
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    background-color: #1D2B53;
+    align-items: center;
+    min-width: 320px;
+    min-height: 270px;
+    padding-top: 5px;
+    flex: 4;
+    flex-wrap: wrap;
+    border-radius: 25px 25px 0px 0px;
+    justify-content: space-evenly; 
+}
+
+.contact .no {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 600px;
+    margin: 20px;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.contact .no div {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 200px;
+    height: 95px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.contact .no img {
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    background-color: transparent;
+}
+
+.contact .no li {
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font: bold;
+    padding-left: 10px;
+    padding-right: 4px;
+}
+
+.contact .bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    background-color: transparent;
+    flex-wrap: wrap;
+}
+
+.contact .bar img {
+    display: flex;
+    position: relative;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    padding-top: 30px;
+    background-color: transparent;
+}
+
+.contact .bar h1 {
+    display: flex;
+    position: relative;
+    color: #fff;
+}
