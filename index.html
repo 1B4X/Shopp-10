@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/icon/ghost.png" type="image/svg+xml">
     <title>PROJECT-SHOPP</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="navigation">
-                <div class="nav-logo">
-                    <a href="#">
-                        <h1 class="logo"><img src="./assets/icon/ghost.png"></h1>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li class="link"><a href="#"></a>Home</li>
-                    <li class="link"><a href="#"></a>Profile</li>
-                    <li class="link"><a href="#"></a>Produk</li>
-                </ul>
-                <button class="btn">Contact</button>
+            <div class="link3" id="home">
             </div>
         </div>
         <div class="row">
             <div class="home">
-                <h1>SELAMAT DATANG</h1>
+                <h3>SELAMAT DATANG</h3>
             </div>
         </div>
         <div class="row">
-            <div class="profil">
+            <div class="link" id="profile">
+            </div>
+        </div>
+        <div class="row">
+            <div class="title3">
                 <h1>PROFILE</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="profile">
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis sapiente minima delectus molestiae hic, neque repellat nulla officiis odio inventore, sed expedita accusamus tenetur consequuntur! Eveniet amet excepturi deserunt consequuntur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eius rerum voluptate aspernatur quaerat aut doloribus culpa nesciunt esse repellat, illum incidunt neque. Culpa saepe labore fugiat, ullam ad a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum reprehenderit quam harum sapiente eius quidem earum adipisci at Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint voluptates veniam at deleniti ipsam. Distinctio minima nisi laboriosam similique omnis provident animi iure necessitatibus veniam cum labore, quisquam facere!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="link1" id="produk">
             </div>
         </div>
         <div class="row">
@@ -41,12 +43,12 @@
         </div>
         <div class="row">
             <div class="produk">
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 1</a></div>
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 2</a></div>
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 3</a></div>
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 4</a></div>
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 5</a></div>
-                <div><img src="./assets/background/kaos.png"><a>PRODUK 6</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 1</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 2</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 3</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 4</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 5</a></div>
+                <div><img src="./assets/assets/kaos.png"><a>PRODUK 6</a></div>
             </div>
         </div>
         <div class="row">
@@ -56,14 +58,14 @@
         </div>
         <div class="row">
             <div class="pesan">
-                <div><img src="./assets/icon/code.png"><a>Lorem, ipsum dolor.</a></div>
-                <div><img src="./assets/icon/game.png"><a>Lorem, ipsum dolor.</a></div>
-                <div><img src="./assets/icon/instagram.png"><a>Lorem, ipsum dolor.</a></div>
-                <div><img src="./assets/icon/send.png"><a>Lorem, ipsum dolor.</a></div>
+                <div><img src="./assets/icon/code.png"><a>Pilih Produk Yang Ingin Anda Dibeli</a></div>
+                <div><img src="./assets/icon/game.png"><a>Screenshot Produk Yang Ingin Dibeli</a></div>
+                <div><img src="./assets/icon/instagram.png"><a>Scan Barcode Dibagian Contact</a></div>
+                <div><img src="./assets/icon/send.png"><a>Kirim Screenshot Dan Tanyakan Produk</a></div>
             </div>
         </div>
         <div class="row">
-            <div class="title2">
+            <div class="title2" id="contact">
                 <h1>CONTACT</h1>
             </div>
         </div>
@@ -73,7 +75,28 @@
                     <div><img src="./assets/icon/ghost.png"><li><a>Admin: 0989-6273-735-682</a></li></div>
                     <div><img src="./assets/icon/ghost.png"><li><a>Admin: 0989-6273-735-682</a></li></div>
                 </div>
-                <div class="bar"><img src="./assets/icon/produk1.png"><h1>Scan Me</h1></div>
+                <div class="bar"><img src="./assets/assets/Barcode.jfif"><a href="https://youtu.be/71a2zeC71gk?si=SI3jBvKo6zmFacC2" class="link-bar">ORDER</a></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="navigation">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <h1 class="logo"><img src="./assets/icon/ghost.png"></h1>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="nav-links" data-nav-link>Home</a>
+                    </li>
+                    <li>
+                        <a href="#profile" class="nav-links" data-nav-link>Profile</a>
+                    </li>
+                    <li>
+                        <a href="#produk" class="nav-links" data-nav-link>Produk</a>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Contact</a>
             </div>
         </div>
     </div>

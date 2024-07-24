@@ -5,6 +5,11 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: myFont;
+    src:url(./assets/font/Space\ Comics.ttf);
+}
+
 .container {
     background-color: white;
 }
@@ -16,17 +21,11 @@ body {
     flex-wrap: wrap;
 }
 
-.header {
+.row .navigation {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #12372A;
-    position: relative;
-    flex: 1;
-    margin: 3px;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    top: 0px;
+    height: 80px;
+    border-radius: 0 0px;
 }
 
 .navigation {
@@ -34,10 +33,11 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #1D2B53;
-    position: relative;
+    position: fixed;
     flex: 1;
-    height: 85px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    height: 50%;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
     border-radius: 0 0 0 0;
 }
 
@@ -62,28 +62,15 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     flex-wrap: wrap;
 }
 
-.link a{
-    position: relative;
-    padding-bottom: 0.75rem;
-    color: #fff;
-}
-
-.link a::after{
-    counter-reset: "";
-    position: relative;
-    width: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #e47755;
-    transition: all 0.3s ease;
-}
-
-.link a:hover::after{
-    width: 70%;
+.nav-links:hover { 
+    color: #d8421d;
+    transition: all 0.3s ease; 
 }
 
 .btn{
@@ -91,6 +78,8 @@ body {
     position: relative;
     padding: 1rem 1rem;
     font-size: 1rem 2rem;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     background-color: #d8421d;
     border-color: transparent;
@@ -102,13 +91,20 @@ body {
 }
 
 .btn:hover{
-    background-color: #e47755;
+    background-color: #ad300a;
+}
+
+.link3 {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    flex-wrap: wrap;
 }
 
 .home {
     position: relative;
     display: flex;
-    background-image: url("./assets/background/background4.png");
+    background-image: url("./assets/assets/background4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -117,39 +113,64 @@ body {
     min-width: 300px;
     flex-wrap: wrap;
     flex: 5;
+    margin-top: 80px;
     justify-content: space-around;
     min-height: 250px; 
-    border-radius: 0px 0px 25px 25px;
     justify-content: center;
     align-items: center;
 }
 
-.home h1 {
+.home h3 {
     display: flex;
     position: relative;
+    font-family: myfont;
     color: #fff;
+    -webkit-text-stroke: 1px #1D2B53;
 }
 
-.profil {
+.title3 {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px 25px 0 0;
+    color: #1D2B53;
+    flex: 4;
+    min-width: 200px;
+    min-height: 30px;
+    flex-wrap: wrap;
+    background-color:  #fff;
+}
+
+.link {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    height: 80px;
+    top: 260px;
+    flex-wrap: wrap;
+}
+
+.profile {
     position: relative;
     display: flex;
     background-color: #fff;
     align-items: center;
     min-width: 320px;
-    min-height: 230px;
+    min-height: 150px;
     padding-top: 5px;
     flex: 4;
     flex-wrap: wrap;
     justify-content: center;    
 }
 
-.profil h1 {
+.profile h1 {
     position: relative;
     display: flex;
     color: black;
 }
 
-.profil p {
+.profile p {
     position: relative;
     display: flex;
     text-align: center;
@@ -173,6 +194,14 @@ body {
     flex-wrap: wrap;
     background-color:  #1D2B53;
     border-color: #1D2B53;
+}
+
+.link1 {
+    display: flex;
+    position: absolute;
+    width: 1px;
+    top: 492px;
+    flex-wrap: wrap;
 }
 
 .produk {
@@ -252,32 +281,33 @@ body {
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 95px;
-    width: 450px;
+    width: 480px;
     color: white;
-    margin: 20px;
+    margin: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
     background-color: white;
     flex-wrap: wrap;
 }
 
 .pesan div img {
+    display: flex;
     position: relative;
     margin: auto;
     height: 50px;
     width: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 50px;
+    margin-left: 15px;
     background-color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .pesan div a {
     display: flex;
     position: relative;
     color: black;
-    padding-right: 30px;
+    margin-right: 15px;
+    flex-wrap: wrap;
 }
 
 .title2 {
@@ -347,6 +377,7 @@ body {
 .contact .no li {
     display: flex;
     position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
     font-size: 20px;
     font: bold;
@@ -373,11 +404,32 @@ body {
     height: 150px;
     width: 150px;
     padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
     background-color: transparent;
+    flex-wrap: wrap;
 }
 
-.contact .bar h1 {
+.contact .bar a {
     display: flex;
     position: relative;
+    padding: 1rem 1rem;
     color: #fff;
+    background-color: #d8421d;
+    text-decoration: none;
+    border-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    right: 15px;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+    flex-wrap: wrap;
+
+}
+
+.contact .bar a:hover {
+    background-color: #ad300a;
 }
