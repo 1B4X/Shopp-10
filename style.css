@@ -91,7 +91,8 @@ body {
 }
 
 .btn:hover{
-    background-color: #ad300a;
+    background-color: #fff;
+    color: #d8421d;
 }
 
 .link3 {
@@ -238,7 +239,14 @@ body {
     width: 120px;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: all 0.3s ease;
     background-color: transparent;
+}
+
+.produk div img:hover {
+    height: 180px;
+    width: 150px;
+    transition: all 0.3s ease;
 }
 
 .produk div a {
@@ -431,5 +439,16 @@ body {
 }
 
 .contact .bar a:hover {
-    background-color: #ad300a;
+    background-color: #fff;
+    color: #d8421d;
+}
+
+.copyright {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    background-color: hsl(225, 24%, 27%);
 }
